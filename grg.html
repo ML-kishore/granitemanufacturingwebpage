@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <div class="menu-nav">
+        <i class="fas fa-bars"></i>
+        <h2>StonePro Granites</h2>
+      </div>
+      <div class="side-nav" id="side-nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closenav()"><i class="fas fa-times"></i></a>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Projects</a>
+        <a href="#">Expertise</a>
+        <a href="devportfolio.html">Developer Profile</a>
+      </div>
+      <div class="overlay" id="overlay">
+      </div>
+    <header>
+        <div class="product-header">
+            <h2>StonePro Granites</h2>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Projects</a></li>            
+            <li><a href="#">About Us</a></li>            
+            <li><a href="#">Gallery</a></li>            
+            <li><a href="#">Contact Us</a></li>            
+
+        </ul>
+    </nav>
+    <div class="container-header">
+        <h2>Gallery</h2>
+    </div>
+    <div class="card-container">
+        
+        <div class="card">
+            <img src="images/prod-1.jpeg" alt="product">
+            <div class="card-text">Black</div>
+        </div>
+        <!--card2-->
+        <div class="card">
+            <img src="images/prod-2.jpg" alt="product">
+            <div class="card-text">Multi-Color</div>
+        </div>
+        <!--card 3-->
+        <div class="card">
+            <img src="images/lakha-red-1000x1000.webp" alt="product">
+            <div class="card-text">Sentinel Red</div>
+        </div>
+    </div>
+    <footer>
+        <div class="header">
+            <h2><span>StonePro</span>Granites Pvt.Ltd</h2>
+            
+        </div>
+        <main>
+            <ul class="footer-ul">
+
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Sourcing</a></li>
+                <li><a href="#">Facilities</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+            <ul class="footer-ul-2">
+                <li><a href = "#">Articles</a></li>
+                <li><a href = "#">Ornaments</a></li>
+                <li><a href = "#">Sculptures</a></li>
+                <li><a href = "#">Monuments</a></li>
+                <li><a href = "#">Special Design</a></li>
+                <li><a href = "#">Projects</a></li>
+            </ul>
+            <ul class="imp">
+                <li><a href = "#"><a href = "#">Contact Us</a></a></li>
+            </ul>
+        </main>
+        <div class="copyright">
+            <p>&copy Copyright StonePro Granites Pvt Ltd</p>
+        </div>
+    </footer>
+    <script>
+        const menuIcon = document.querySelector('.fas.fa-bars');
+        const sideNav = document.getElementById('side-nav');
+        const overlay = document.getElementById('overlay');
+      
+        menuIcon.addEventListener('click', () => {
+          sideNav.style.width = '250px';
+          overlay.classList.add('active');
+        });
+      
+        overlay.addEventListener('click', () => {
+          sideNav.style.width = '0';
+          overlay.classList.remove('active');
+        });
+        function opennav(){
+            document.getElementById("side-nav").style.width = "250px";
+
+        }
+        function closenav(){
+            document.querySelector("#side-nav").style.width = "0";
+        }
+      </script>
+      
+</body>
+</html>
